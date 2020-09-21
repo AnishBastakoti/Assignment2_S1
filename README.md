@@ -1,1 +1,17 @@
 # Assignment2_S1
+
+""@babel/core"
+"babel"
+"babel-preset-env"
+"babelify"
+"browserify"
+"gulp"
+"gulp-cli"
+"gulp-concat"
+"gulp-load-plugins"
+"gulp-sass"
+"gulp-sourcemaps"
+"vinyl-buffer"
+"vinyl-source-stream"
+"whatwg-fetch"
+"yargs"

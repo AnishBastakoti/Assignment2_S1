@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Bookbank, BOOKBANK,e-book, SELL_BOOK, buy-book, order book">
+  <meta name="theme-color" content="#764ABC"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signup Page</title>
+  <link rel="manifest" href="mainfest.js">
+  <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+  <link rel='icon' href="../img/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div class="registration-form">
+        <form id="form" class="form">
+            <div class="form-icon">
+                <p> Create Account Here</p>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="username" placeholder="Username" />
+                <i class="fas fa-check-circle"></i>
+			          <i class="fas fa-exclamation-circle"></i>
+			          <small>Error message</small>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control item" id="password" placeholder="Password" />
+                <i class="fas fa-check-circle"></i>
+			          <i class="fas fa-exclamation-circle"></i>
+			          <small>Error message</small>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control item" id="password2" placeholder="Re-password" />
+                <i class="fas fa-check-circle"></i>
+			          <i class="fas fa-exclamation-circle"></i>
+			          <small>Error message</small>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="email" placeholder="info@domain.com (Email)" />
+                <i class="fas fa-check-circle"></i>
+			          <i class="fas fa-exclamation-circle"></i>
+			          <small>Error message</small>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="phone" placeholder="XXX-XXX-XXX [Phone Number]" />
+                <i class="fas fa-check-circle"></i>
+			          <i class="fas fa-exclamation-circle"></i>
+			          <small>Error message</small>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="dob" placeholder="DD/MM/YY[Date of Birth]" />
+                <i class="fas fa-check-circle"></i>
+			          <i class="fas fa-exclamation-circle"></i>
+			          <small>Error message</small>
+            </div>
+            <div>
+              <h3> Gender</h3>
+            <div class="radio">
+              <label><input type="radio" name="optradio" checked>Male</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">Female</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">Others</label>
+            </div>
+            <a href="Terms-and-conditions.pdf" target="blank">By creating account you agree the terms and Conditions click to read</a>
+            <div class="form-group">
+                <button onclick='document.location="mainpage.html"' type="button" class="create-account">Login</button>
+            </div>
+          </div>
+          <div class="center">
+            <input type="checkbox" id="Checkbtn">
+            <label for="Checkbtn" class="btn">
+              <a> Already have account? Sign Up</a>
+            </label>
+            <div class="box center">
+                  <img src="../img/img5.png" alt="Avatar" class="image2">
+                      <ul class="list">
+                        <li><strong> Member Log in</strong></li>
+                        <li><input type="text" name ="User Name" placeholder="User Name"></li>
+                        <li><input type="Password" name ="Password" placeholder="******* (Password)"></li>
+                        <li>Forget Password?</li>
+                      </ul>
+                      <a href="mainpage.html" class="button">Submit</a>
+                  <label for="Checkbtn" class="btn1">
+                    <a> Close</a>
+                  </label>
+                </div>
+            <div class="overlay"></div>
+          </div>
+        </form>
+        <div class="social-media">
+            <h5>Sign up with social media</h5>
+            <div class="social-icons">
+                <a href="#"><i class="icon-social-facebook" title="Facebook"></i></a>
+                <a href="#"><i class="icon-social-google" title="Google"></i></a>
+                <a href="#"><i class="icon-social-twitter" title="Twitter"></i></a>
+            </div>
+        </div>
+  </div>
+<script src="../js/start.js"></script>
+<script src="../js/sw.js"></script>
+</body>
+</html>
