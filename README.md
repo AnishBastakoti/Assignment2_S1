@@ -1,17 +1,24 @@
 # Assignment2_S1
 
-""@babel/core"
-"babel"
-"babel-preset-env"
-"babelify"
-"browserify"
-"gulp"
-"gulp-cli"
-"gulp-concat"
-"gulp-load-plugins"
-"gulp-sass"
-"gulp-sourcemaps"
-"vinyl-buffer"
-"vinyl-source-stream"
-"whatwg-fetch"
-"yargs"
+## dependencies
+You will need the following dependencies to use this gulpfile
+* babel
+* babel-preset-env
+* babelify
+* browserify
+* gulp@next
+* gulp-autoprefixer
+* gulp-combine-mq
+* gulp-concat
+* gulp-if
+* gulp-load--plugins
+* gulp-sass
+* gulp-uglify
+* vinyl-buffer
+* vinyl-source-stream
+* yargs
+* @babel/core
+* gulp
+* gulp-cli
+* gulp-sourcemaps
+* whatwg-fetch
