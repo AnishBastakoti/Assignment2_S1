@@ -15,7 +15,7 @@ self.addEventListener('install', function(event){
 });
 
 const cacheTitle = 'bookbankcache';
-const cacheVersion = 'C1v1';
+const cacheVersion = 'v1';
 const cacheName = cacheTitle + '-' + cacheVersion;
 const urlsToCache = [
   '/',
@@ -43,7 +43,6 @@ const urlsToCache = [
   'js/mainpage.js',
   'js/popup.js',
   'js/index.js',
-
   'img/aero.png',
   'img/civil.png',
   'img/book.png',
