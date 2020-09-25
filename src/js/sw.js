@@ -9,6 +9,7 @@ const urlsToCache = [
   '/',
   '/views/index.html',
   '/styles/style.css',
+  '/js/start.js'
 ];
 
 self.addEventListener('install', function(event) {

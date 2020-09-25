@@ -1,45 +1,49 @@
-const gulp = require('gulp');
-const yargs = require('yargs');
-const plugins = require('gulp-load-plugins')();
-const browserify = require('browserify');
-const babelify = require('babelify');
-const source = require('vinyl-source-stream');
-const buffer = require('vinyl-buffer');
+var gulp = require('gulp');
+var yargs = require('yargs');
+var plugins = require('gulp-load-plugins')();
+var gulpSass = require('gulp-sass');
+var browserify = require('browserify');
+var babelify = require('babelify');
+var source = require('vinyl-source-stream');
+var buffer = require('vinyl-buffer');
 
-const args = yargs.argv;
+var args = yargs.argv;
 
-gulp.task('js', () => {
-	return browserify({entries: 'src/js/start.js', debug: !args.prod})
-		.transform('babelify', {presets: ['babel/present-env']})
-		.bundle()
-		.pipe(source('start.js'))
-		.pipe(buffer())
-		.pipe(gulp.dest('./build/'));
-});
+sass.compiler = require('node-sass');
 
-gulp.task('sass', () => {
-	return gulp.src('src/styles/style.scss')
-//		.pipe(plugins.combineMq())
-//		.pipe(plugins.csso())
-		.pipe(gulp.dest('./build/'));
-});
+function js() {
+	return gulp.src('src/js/**/*')
+		.pipe(gulp.dest('./build/js'));
+}
 
-gulp.task('views', () => {
+function sass(cb) {
+	cb();
+	console.log('OK?');
+	return gulp.src('src/styles/**/*')
+		.pipe(gulpSass())
+		.pipe(gulp.dest('./build/styles'));
+}
+
+function views() {
 	return gulp.src('src/views/**/*')
-		.pipe(gulp.dest('./build/'));
-});
+		.pipe(gulp.dest('./build/views'));
+}
 
-gulp.task('img', () => {
-	return gulp.src('src/img/*')
-		.pipe(gulp.dest('./build/img/'));
-});
+function img() {
+	return gulp.src('src/img/**/*')
+		.pipe(gulp.dest('./build/img'));
+}
 
-gulp.task('watch', (done) => {
-	gulp.watch('src/styles/*', ['sass']);
-	gulp.watch('src/views/*', ['views']);
-	gulp.watch('src/js/*', ['js']);
-	gulp.watch('src/img/*', ['img']);
-	done();
-});
+function watch() {
+	gulp.watch('src/styles/*', sass);
+	gulp.watch('src/views/*', views);
+	gulp.watch('src/js/*', js);
+	gulp.watch('src/img/*', img);
+}
 
-gulp.task('default', gulp.parallel('views', 'sass', 'js', 'img'));
+exports.js = js;
+exports.sass = sass;
+exports.views = views;
+exports.img = img;
+exports.watch = watch;
+exports.default = gulp.parallel([js, sass, views, img]);

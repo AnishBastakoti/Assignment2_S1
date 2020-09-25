@@ -1,0 +1,20 @@
+{
+    "name": "Book Bank",
+    "short_name": "BookBank",
+    "icons": [
+        {
+            "src": "src/img/icon2.jpg",
+            "sizes": "256x256",
+            "type": "image/jpg"
+        },
+        {
+            "src": "src/img/icon.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "../src/views/index.html",
+    "display": "standalone",
+    "background_color": "#764ABC",
+    "theme_color": "#764ABC"
+}
