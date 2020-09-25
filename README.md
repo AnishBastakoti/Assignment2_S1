@@ -1,5 +1,9 @@
 # Assignment2_S1
 
+##To use the app
+* npm Install
+* either use npx gulp/ npm run build
+
 ## dependencies
 You will need the following dependencies to use this gulpfile
 * babel
