@@ -1,6 +1,6 @@
 # Assignment2_S1
 
-##To use the app
+To use the fully functional app you need the following:
 * npm Install
 * either use npx gulp/ npm run build
 
